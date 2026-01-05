@@ -24,6 +24,8 @@ public class User {
     private String passwordHash;
     @Column(unique = true, nullable = false, name = "email")
     private String email;
+
+    private UserType userType;
     
     private LocalDateTime createdAt;
     private LocalDateTime lastLoggedIn;
